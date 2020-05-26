@@ -25,7 +25,7 @@ const FooterDefault = () => {
                                 <i className="fas fa-envelope fa-lg green-text mr-md-5 mr-3 fa-2x"> </i>
                             </a>
 
-                            <a className="ins-ic" href="https://instagram.com/coach_ricardofalcao" target="_blank">
+                            <a className="ins-ic" href="https://instagram.com/pt.tiagocarvalho" target="_blank">
                                 <i className="fab fa-instagram fa-lg green-text mr-md-5 mr-3 fa-2x"> </i>
                             </a>
                         </div>

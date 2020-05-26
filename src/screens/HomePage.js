@@ -33,7 +33,7 @@ export default function HomePage() {
                             <div className="d-block d-md-none" style={{ height: '5vh' }}></div>
                             <p>
                                 <b>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ligula libero, convallis sed sapien sit amet, aliquet rutrum risus. Integer efficitur quis mauris a consectetur. Ut ac lobortis nulla...
+                                    Desenvolvi técnicas de alta performance que transformaram minha forma de trabalho e consequentemente minha vida. Que tal deixar eu te ajudar a repensar tua jornada?
                                 </b>
                             </p>
                             <div className="mt-2 mb-5">

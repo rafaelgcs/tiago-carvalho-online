@@ -14,10 +14,11 @@ const AboutSection = () => {
                     </div>
                     <div className="col-md-6 text-center align-items-center">
                         <div className="d-block d-md-none" style={{ height: '5vh' }}></div>
-                        <h1 className="title d-none d-md-block">Prazer, sou Tiago Carvalho,</h1>
+                        <h1 className="title d-none d-md-block">Quem sou eu?!</h1>
                         <p>
                             <b>
-                                Tem x anos, natural de Salvador-BA...
+                                Sou Tiago Carvalho, profissional de Educação Física, formado desde 2012 pela UCSAL.
+                                Atuo na área desde 2006, sou apaixonado por esportes, vida, saúde e movimento. Sou questionador por essência, um eterno buscador de mim mesmo.
                             </b>
                         </p>
 
