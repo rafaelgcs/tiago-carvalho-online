@@ -36,15 +36,15 @@ class App extends Component {
 
     return (
       <Router>
-        <div className='flyout' style={{ maxWidth: this.state.width }}>
-          <DefaultNav toggleCollapse={this.toggleCollapse} closeCollapse={this.toggleCollapse} collapseID={collapseID} />
-          {collapseID && overlay}
-          <main style={{ width: this.state.width, maxWidth: this.state.width }}>
-            <Scrollbars style={{ height: this.state.height }}>
+        <Scrollbars style={{ height: this.state.height }}>
+          <div className='flyout' style={{ maxWidth: this.state.width }}>
+            <DefaultNav toggleCollapse={this.toggleCollapse} closeCollapse={this.toggleCollapse} collapseID={collapseID} />
+            {collapseID && overlay}
+            <main style={{ width: this.state.width, maxWidth: this.state.width }}>
               <Routes />
-            </Scrollbars>
-          </main>
-        </div>
+            </main>
+          </div>
+        </Scrollbars>
       </Router>
     );
   }

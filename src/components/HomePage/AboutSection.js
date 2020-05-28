@@ -14,7 +14,17 @@ const AboutSection = () => {
                     </div>
                     <div className="col-md-6 text-center align-items-center">
                         <div className="d-block d-md-none" style={{ height: '5vh' }}></div>
-                        <h1 className="title d-none d-md-block">Quem sou eu?!</h1>
+                        <div className="row justify-content-center">
+                            <div className="col-md-2 col-8 d-block d-md-none">
+                                <img
+                                    src={require('../../assets/img/tiago-c-3-green-quad.png')}
+                                    className='rounded-circle text-center'
+                                    alt=''
+                                    width='100%'
+                                />
+                            </div>
+                        </div>
+                        <h1 className="title">Quem sou eu?!</h1>
                         <p>
                             <b>
                                 Sou Tiago Carvalho, profissional de Educação Física, formado desde 2012 pela UCSAL.

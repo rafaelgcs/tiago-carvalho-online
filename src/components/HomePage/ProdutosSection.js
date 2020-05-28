@@ -79,12 +79,12 @@ const ProdutosSection = () => {
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-10 align-items-center">
-                            <h2 className="h1-responsive font-weight-bold mt-5">
-                                Consultoria
+                            <h2 className="h1-responsive font-weight-bold my-5">
+                                Consultoria Fitness
                             </h2>
-                            <h4 className="h4-responsive mb-5">
+                            {/* <h4 className="h4-responsive mb-5">
                                 (Online / Presencial)
-                            </h4>
+                            </h4> */}
                             <p>
                                 Antes de você escolher um dos planos de treino eu preciso te explicar algumas coisas:
                                 <br />
@@ -172,12 +172,12 @@ const ProdutosSection = () => {
                 </div>
             </section>
 
-            <section className="text-center my-5 align-items-center white-text green rounded" style={{ backgroundColor: 'transparent' }}>
+            <section id="services" className="text-center my-5 align-items-center white-text green rounded" style={{ backgroundColor: 'transparent' }}>
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-10 align-items-center mb-5">
                             <h2 className="h1-responsive font-weight-bold my-5 white-text">
-                                Meus Produtos
+                                Minhas Consultorias
                             </h2>
                             <MDBRow className="text-center">
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">

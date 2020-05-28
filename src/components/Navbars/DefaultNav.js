@@ -18,6 +18,13 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 export default function DefaultNav(props) {
     const { toggleCollapse, closeCollapse, collapseID } = props;
     const logo = require('../../assets/img/icon-white.png');
+    const scrollingTo = to => {
+        let element = document.getElementById(to);
+
+        let heightOfElement = element.scrollHeight;
+
+        element.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    }
     return (
         <MDBNavbar color='green' dark expand='md' fixed='top' scrolling>
             <MDBNavbarBrand href='/' className='py-0 font-weight-bold'>
@@ -32,15 +39,15 @@ export default function DefaultNav(props) {
                         <MDBNavLink
                             exact
                             to='/'
-                            onClick={closeCollapse('mainNavbarCollapse')}
+                            onClick={() => { scrollingTo('top-page'); closeCollapse('mainNavbarCollapse') }}
                         >
                             <strong>Início</strong>
                         </MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
                         <MDBNavLink
-                            to='/sobre'
-                            onClick={closeCollapse('mainNavbarCollapse')}
+                            to='/'
+                            onClick={() => { scrollingTo('about'); closeCollapse('mainNavbarCollapse') }}
                         >
                             <strong>Sobre</strong>
                         </MDBNavLink>
@@ -48,15 +55,19 @@ export default function DefaultNav(props) {
                     <MDBNavItem>
                         <MDBNavLink
                             to='/'
+                            onClick={() => { scrollingTo('consultorias'); closeCollapse('mainNavbarCollapse') }}
                         >
-                            <AnchorLink offset={() => 90} style={{ color: 'white' }} onClick={closeCollapse('mainNavbarCollapse')} href='#missao'><strong>Serviços</strong></AnchorLink>
+                            <strong>Consultorias</strong>
+                            {/* <AnchorLink offset={() => 90} style={{ color: 'white' }} onClick={closeCollapse('mainNavbarCollapse')} href='#consultorias'><strong>Consultorias</strong></AnchorLink> */}
                         </MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
                         <MDBNavLink
                             to='/'
+                            onClick={() => { scrollingTo('testimonials'); closeCollapse('mainNavbarCollapse') }}
                         >
-                            <AnchorLink offset={() => 90} style={{ color: 'white' }} onClick={closeCollapse('mainNavbarCollapse')} href='#products'><strong>Depoimentos</strong></AnchorLink>
+                            <strong>Depoimentos</strong>
+                            {/* <AnchorLink offset={() => 90} style={{ color: 'white' }} onClick={closeCollapse('mainNavbarCollapse')} href='#products'><strong>Depoimentos</strong></AnchorLink> */}
                         </MDBNavLink>
                     </MDBNavItem>
 
