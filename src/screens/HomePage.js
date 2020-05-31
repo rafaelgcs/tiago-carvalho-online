@@ -27,7 +27,7 @@ export default function HomePage() {
     });
     return (
         <>
-            <div id="top-page" className="col-12" style={{ width: window.innerWidth, maxWidth: window.innerWidth, backgroundImage: `url(${require('../assets/img/bg-dark-01.jpg')})`, backgroundRepeat: 'none', backgroundSize: 'cover', backgroundPosition: 'fixed', backgroundAttachment: 'fixed' }}>
+            <div id="top-page" className="col-12" style={{ border: 'none', width: window.innerWidth, maxWidth: window.innerWidth, backgroundImage: `url(${require('../assets/img/bg-dark-01.jpg')})`, backgroundRepeat: 'none', backgroundSize: 'cover', backgroundPosition: 'fixed', backgroundAttachment: 'fixed' }}>
                 <div className="container">
                     <div className="row justify-content-md-center align-items-end" style={{ height: '100vh' }}>
                         <div className="col-md-6 text-center d-none d-md-block">
@@ -56,14 +56,17 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
-            <div className="container" id="about">
-                <AboutSection />
+            <div style={{ border: 'none', backgroundImage: `url(${require('../assets/img/bg-dark-01.jpg')})`, backgroundRepeat: 'none', backgroundSize: 'cover', backgroundPosition: 'fixed', backgroundAttachment: 'fixed' }}>
+                <div className="container" id="about">
+                    <AboutSection />
+                </div>
             </div>
-            <div className="container" id="consultorias">
-                <ProdutosSection />
+            <div style={{ paddingTop: 35, border: 'none', backgroundImage: `url(${require('../assets/img/bg-dark-01.jpg')})`, backgroundRepeat: 'none', backgroundSize: 'cover', backgroundPosition: 'fixed', backgroundAttachment: 'fixed' }}>
+                <div className="container" id="consultorias">
+                    <ProdutosSection />
+                </div>
             </div>
             <div id="testimonials" style={{ paddingTop: 5, backgroundImage: `url(${require('../assets/img/bg-dark-01.jpg')})`, backgroundRepeat: 'none', backgroundSize: 'cover', backgroundPosition: 'fixed', backgroundAttachment: 'fixed' }} >
-
                 <div className="container">
                     <TestimonialsSection />
                 </div>

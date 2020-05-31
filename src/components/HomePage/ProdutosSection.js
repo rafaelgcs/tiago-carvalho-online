@@ -81,7 +81,7 @@ const ProdutosSection = () => {
     }
     return (
         <>
-            <section className="text-center my-5 align-items-center white-text green rounded" style={{ backgroundColor: 'transparent' }}>
+            <section className="text-center align-items-center white-text green rounded" style={{ backgroundColor: 'transparent' }}>
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-10 align-items-center">
@@ -164,7 +164,7 @@ const ProdutosSection = () => {
                 </div>
             </section>
 
-            <section id="app-mfit" className="text-center my-5 align-items-center black-text" style={{ backgroundColor: 'transparent' }}>
+            <section id="app-mfit" className="text-center my-5 align-items-center white-text" style={{ backgroundColor: 'transparent' }}>
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-10 align-items-center">
@@ -279,7 +279,7 @@ const ProdutosSection = () => {
                 </div>
             </section>
 
-            <section id="app-mfit" className="text-center my-5 align-items-center black-text" style={{ backgroundColor: 'transparent' }}>
+            <section id="app-mfit" className="text-center my-5 align-items-center white-text" style={{ backgroundColor: 'transparent' }}>
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-10 align-items-center">
@@ -352,7 +352,7 @@ const ProdutosSection = () => {
             </section>
 
 
-            <section id="funcional" className="text-center my-5 align-items-center white-text green rounded" style={{ backgroundColor: 'transparent' }}>
+            <section id="funcional" className="text-center align-items-center white-text green rounded" style={{ backgroundColor: 'transparent', paddingBottom: 5 }}>
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-10 align-items-center">

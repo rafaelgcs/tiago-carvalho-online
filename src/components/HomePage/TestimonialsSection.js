@@ -49,14 +49,14 @@ const TestimonialsSection = () => {
         prevArrow: <PrevArrow />,
     };
     return (
-        <section className="text-center my-5 align-items-center green-text transparent" style={{ height: '100vh', backgroundColor: 'transparent' }}>
+        <section className="text-center align-items-center green-text transparent" style={{ backgroundColor: 'transparent' }}>
             <h2 className="h1-responsive font-weight-bold mt-5">
                 Depoimentos
             </h2>
             <h6 className="h6-responsive mb-5 grey-text">
                 Veja depoimentos de alguns dos meus alunos
             </h6>
-            <Slider {...settings}>
+            <Slider {...settings} style={{ maxWidth: window.innerWidth }}>
                 <div className="container">
                     <MDBTestimonial>
                         <div className="row justify-content-center">

@@ -14,7 +14,7 @@ const AboutSection = () => {
     return (
         <>
             <section className="text-center align-items-center green-text transparent" style={{ height: '90vh', backgroundColor: 'transparent' }}>
-                <div className="row justify-content-md-center align-items-center" style={{ height: '100vh' }}>
+                <div className="row justify-content-md-center align-items-center" style={{ height: '100vh', backgroundColor: 'transparent' }}>
                     <div className="col-md-6 text-center d-none d-md-block">
                         <img src={require("../../assets/img/tiago-c-3-green.png")} style={{ maxWidth: '50%' }} />
                     </div>
