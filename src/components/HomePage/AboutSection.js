@@ -5,6 +5,12 @@ import {
 
 const AboutSection = () => {
 
+    const scrollingTo = to => {
+        let element = document.getElementById(to);
+
+        element.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    }
+
     return (
         <>
             <section className="text-center align-items-center green-text transparent" style={{ height: '90vh', backgroundColor: 'transparent' }}>
@@ -31,6 +37,7 @@ const AboutSection = () => {
                                 Atuo na área desde 2006, sou apaixonado por esportes, vida, saúde e movimento. Sou questionador por essência, um eterno buscador de mim mesmo.
                             </b>
                         </p>
+                        <MDBBtn className="w-100" rounded color="green" onClick={() => scrollingTo('consultorias')}>Conheça Minhas Consultorias!</MDBBtn>
 
                     </div>
 

@@ -73,6 +73,12 @@ const ProdutosSection = () => {
             }
         ]
     };
+
+    const scrollingTo = to => {
+        let element = document.getElementById(to);
+
+        element.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    }
     return (
         <>
             <section className="text-center my-5 align-items-center white-text green rounded" style={{ backgroundColor: 'transparent' }}>
@@ -114,6 +120,13 @@ const ProdutosSection = () => {
                             </p>
                             <p>
                                 <strong>Trabalho com três tipos de planos:</strong>
+                                <br />
+                                <MDBBtn onClick={() => scrollingTo('services')} color="white" size="lg">
+                                    <MDBIcon far icon="eye" className="left" /> CONHEÇA OS PLANOS
+                                </MDBBtn>
+                                <MDBBtn onClick={() => scrollingTo('app-mfit')} color="white" size="lg">
+                                    <MDBIcon far icon="eye" className="left" /> CONHEÇA O APP
+                                </MDBBtn>
                                 <ul className="container">
                                     <li>
                                         No plano de 1 consultoria, você receberá um planejamento com validade de 30 dias.
@@ -151,7 +164,7 @@ const ProdutosSection = () => {
                 </div>
             </section>
 
-            <section className="text-center my-5 align-items-center black-text" style={{ backgroundColor: 'transparent' }}>
+            <section id="app-mfit" className="text-center my-5 align-items-center black-text" style={{ backgroundColor: 'transparent' }}>
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-10 align-items-center">
@@ -181,7 +194,7 @@ const ProdutosSection = () => {
                             </h2>
                             <MDBRow className="text-center">
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <MDBView className="overlay rounded z-depth-1" waves>
+                                    {/* <MDBView className="overlay rounded z-depth-1" waves>
                                         <img
                                             src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg"
                                             alt=""
@@ -190,19 +203,24 @@ const ProdutosSection = () => {
                                         <a href="#!">
                                             <MDBMask overlay="white-slight" />
                                         </a>
-                                    </MDBView>
+                                    </MDBView> */}
                                     <MDBCardBody className="pb-0">
+                                        <h2>
+                                            <MDBIcon icon="brain" />
+                                        </h2>
                                         <h4 className="white-text font-weight-bold my-3">Treino Inteligente</h4>
                                         <p className="white-text">
                                             Cada parte do seu treino é resultado de rigorosos estudos científicos. É assim que você garante a certeza de fazer o melhor treino possível no conforto de sua casa.
-                                </p>
-                                        <MDBBtn color="white" size="sm">
-                                            <MDBIcon far icon="clone" className="left" /> QUERO AGORA!
-                                </MDBBtn>
+                                        </p>
+                                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5571992483233">
+                                            <MDBBtn color="white" size="sm">
+                                                <MDBIcon icon="brain" className="left" /> QUERO AGORA!
+                                            </MDBBtn>
+                                        </a>
                                     </MDBCardBody>
                                 </MDBCol>
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <MDBView className="overlay rounded z-depth-1" waves>
+                                    {/* <MDBView className="overlay rounded z-depth-1" waves>
                                         <img
                                             src="https://mdbootstrap.com/img/Photos/Others/project4.jpg"
                                             alt=""
@@ -211,19 +229,24 @@ const ProdutosSection = () => {
                                         <a href="#!">
                                             <MDBMask overlay="green-slight" />
                                         </a>
-                                    </MDBView>
+                                    </MDBView> */}
                                     <MDBCardBody className="pb-0">
+                                        <h2>
+                                            <MDBIcon icon="headset" />
+                                        </h2>
                                         <h4 className="white-text font-weight-bold my-3">Suporte Exclusivo</h4>
                                         <p className="white-text">
                                             Estarei lado a lado contigo durante todo processo. Você terá acesso direto ao meu Whatsapp pessoal para resolver qualquer dificuldade.
-                                </p>
-                                        <MDBBtn color="white" size="sm">
-                                            <MDBIcon far icon="clone" className="left" /> QUERO AGORA!
-                                </MDBBtn>
+                                        </p>
+                                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5571992483233">
+                                            <MDBBtn color="white" size="sm">
+                                                <MDBIcon icon="headset" className="left" /> QUERO AGORA!
+                                            </MDBBtn>
+                                        </a>
                                     </MDBCardBody>
                                 </MDBCol>
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <MDBView className="overlay rounded z-depth-1" waves>
+                                    {/* <MDBView className="overlay rounded z-depth-1" waves>
                                         <img
                                             src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg"
                                             alt=""
@@ -232,15 +255,20 @@ const ProdutosSection = () => {
                                         <a href="#!">
                                             <MDBMask overlay="green-slight" />
                                         </a>
-                                    </MDBView>
+                                    </MDBView> */}
                                     <MDBCardBody className="pb-0">
+                                        <h2>
+                                            <MDBIcon icon="crown" />
+                                        </h2>
                                         <h4 className="white-text font-weight-bold my-3">Conteúdo Prêmio</h4>
                                         <p className="white-text">
                                             E mais, você receberá materiais exclusivos que vão te levar aos resultados que você deseja muito mais rápido. Tudo isso dentro do nosso portal premium.
-                                </p>
-                                        <MDBBtn color="white" size="sm">
-                                            <MDBIcon far icon="clone" className="left" /> QUERO AGORA!
-                                </MDBBtn>
+                                        </p>
+                                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5571992483233">
+                                            <MDBBtn color="white" size="sm">
+                                                <MDBIcon icon="crown" className="left" /> QUERO AGORA!
+                                            </MDBBtn>
+                                        </a>
                                     </MDBCardBody>
                                 </MDBCol>
                             </MDBRow>
@@ -251,7 +279,80 @@ const ProdutosSection = () => {
                 </div>
             </section>
 
-            <section className="text-center my-5 align-items-center white-text green rounded" style={{ backgroundColor: 'transparent' }}>
+            <section id="app-mfit" className="text-center my-5 align-items-center black-text" style={{ backgroundColor: 'transparent' }}>
+                <div className="container">
+                    <div className="row justify-content-center align-items-center">
+                        <div className="col-md-10 align-items-center">
+                            <h2 className="h1-responsive font-weight-bold mt-5 green-text">
+                                Personal Trainer
+                            </h2>
+                            <h4 className="h4-responsive mb-5">
+                                Atendimento Individual
+                            </h4>
+                            <div className="row container">
+                                <div className="col-md-6 text-center d-none d-md-block">
+                                    <img src={require("../../assets/img/personal_trainer.jpg")} style={{ maxWidth: '80%' }} />
+                                </div>
+                                <div className="col-md-6">
+                                    <p>
+                                        A função de um personal trainer é promover o bem-estar, a saúde e um condicionamento físico que seja eficaz para prevenir doenças, distúrbios funcionais e problemas de postura. Por isso, o treino com personal trainer garante atenção de alguém especializado, que estará focado na sua qualidade de vida. Isso é o que faz diferença nos seus resultados.
+                                    </p>
+                                    <h5>
+                                        Cada indivíduo é único!
+                                    </h5>
+                                    <p>
+                                        Assim como o treino também deve ser. Cada pessoa possui objetivos diferentes também, e com isso, cada treinamento é feito de acordo com as limitações, objetivos e necessidades de cada pessoa.
+                                    </p>
+                                </div>
+                                <div className="col-md-12">
+                                    <h5>
+                                        Objetivos!
+                                    </h5>
+                                    <p>
+                                        Depois de saber quais as suas necessidades e o a sua condição física, o personal trainer consegue montar um treino individualizado, para que você se desenvolva de acordo com os seus objetivos, sejam hipertrofia, ou perda de peso, etc. Esse treino específico é o que te dará o máximo de resultados, e o profissional irá respeitar os seus limites.
+                                    </p>
+                                    <h5>
+                                        Disciplina!
+                                    </h5>
+                                    <p>
+                                        A disciplina é importante em qualquer aspecto da vida, e para os treinos é imprescindível na hora de alcançar os objetivos. Ter a presença de um personal trainer na sua rotina de treinamentos, ajuda muito a conseguir um bom desempenho.
+                                    </p>
+                                    <h5>
+                                        Motivação!
+                                    </h5>
+                                    <p>
+                                        Esse é talvez o mais importante benefício do treino com personal trainer, além da motivação propriamente dita, ele também faz com que o treino não seja monótono e trabalhando junto todos os dias, consegue variar muito mais os exercícios. Para conquistar os melhores resultados, se manter motivado é o primeiro passo.
+                                    </p>
+                                    <h5>
+                                        Avaliação do progresso!
+                                    </h5>
+                                    <p>
+                                        Através da análise dos seus resultados, uma das maiores funções do personal é avaliar o seu progresso, para saber quais são os resultados que você vem tendo. A capacitação para isso vem do trabalho que ele desenvolve, sabendo corrigir o que for e se for necessário.
+                                    </p>
+                                    <h5>
+                                        Orientação intensa dos exercícios!
+                                    </h5>
+                                    <p>
+                                        Além de acompanhar todos os exercícios realizados de perto, cada repetição, o personal trainer também ensina o jeito certo de fazer os movimentos. Além dos resultados, essa atenção também garante saúde e menos riscos à você.
+                                    </p>
+                                    <h5>
+                                        Garantia de evolução!
+                                    </h5>
+                                    <p>
+                                        A evolução junto ao personal trainer acontece de forma mais rápida, segura e sempre constante.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    {/* <MDBBtn className="w-100" rounded color="green" onClick={() => scrollingTo('funcional')}>Conheça Minhas Consultorias!</MDBBtn> */}
+
+                </div>
+            </section>
+
+
+            <section id="funcional" className="text-center my-5 align-items-center white-text green rounded" style={{ backgroundColor: 'transparent' }}>
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-10 align-items-center">

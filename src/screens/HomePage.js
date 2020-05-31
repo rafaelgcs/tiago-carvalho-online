@@ -34,7 +34,7 @@ export default function HomePage() {
                             <img src={require("../assets/img/tiago-c-2-green.png")} style={{ maxWidth: '70%' }} />
                         </div>
                         <div className="col-md-6 text-center align-items-center text-white">
-                            <img src={require("../assets/img/green-logo-light.png")} style={{maxWidth: '100%'}} />
+                            <img src={require("../assets/img/green-logo-light.png")} style={{ maxWidth: '100%' }} />
                             <div className="d-block d-md-none" style={{ height: '5vh' }}></div>
                             <p>
                                 <b>
@@ -44,10 +44,10 @@ export default function HomePage() {
                             <div className="mt-2 mb-5">
                                 <div className="row justify-content-md-center">
                                     <div className="col-md-6">
-                                        <MDBBtn className="w-100" rounded color="green" onClick={()=>scrollingTo('about')}>Conheça-me Mais</MDBBtn>
+                                        <MDBBtn className="w-100" rounded color="green" onClick={() => scrollingTo('about')}>Conheça-me Mais</MDBBtn>
                                     </div>
                                     <div className="col-md-6">
-                                        <MDBBtn className="w-100" outline color="green" onClick={()=>scrollingTo('services')}>Veja meus serviços</MDBBtn>
+                                        <MDBBtn className="w-100" outline color="green" onClick={() => scrollingTo('services')}>Veja meus serviços</MDBBtn>
                                     </div>
                                 </div>
                             </div>
@@ -62,8 +62,11 @@ export default function HomePage() {
             <div className="container" id="consultorias">
                 <ProdutosSection />
             </div>
-            <div className="container" id="testimonials">
-                <TestimonialsSection />
+            <div id="testimonials" style={{ paddingTop: 5, backgroundImage: `url(${require('../assets/img/bg-dark-01.jpg')})`, backgroundRepeat: 'none', backgroundSize: 'cover', backgroundPosition: 'fixed', backgroundAttachment: 'fixed' }} >
+
+                <div className="container">
+                    <TestimonialsSection />
+                </div>
             </div>
             <FooterDefault />
             <FloatButtonWhatsapp />
