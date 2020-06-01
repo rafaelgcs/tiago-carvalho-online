@@ -17,7 +17,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export default function DefaultNav(props) {
     const { toggleCollapse, closeCollapse, collapseID } = props;
-    const logo = require('../../assets/img/icon-white.png');
+    const logo = require('../../assets/img/icon-white-30x30.png');
     const scrollingTo = to => {
         let element = document.getElementById(to);
 

@@ -175,7 +175,7 @@ const ProdutosSection = () => {
                                 Aplicativo Inteligente
                             </h4>
                             <h4>
-                                <img src={require("../../assets/img/mfit-logo.png")} height="200" />
+                                <img src={require("../../assets/img/mfit-logo-268x200.png")} />
                             </h4>
                             <p>
                                 Seu treino personalizado ficará disponível no aplicativo Ptrainer, com todos as explicações do programa em vídeos super detalhados.
@@ -194,16 +194,6 @@ const ProdutosSection = () => {
                             </h2>
                             <MDBRow className="text-center">
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    {/* <MDBView className="overlay rounded z-depth-1" waves>
-                                        <img
-                                            src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg"
-                                            alt=""
-                                            className="img-fluid"
-                                        />
-                                        <a href="#!">
-                                            <MDBMask overlay="white-slight" />
-                                        </a>
-                                    </MDBView> */}
                                     <MDBCardBody className="pb-0">
                                         <h2>
                                             <MDBIcon icon="brain" />
@@ -220,16 +210,6 @@ const ProdutosSection = () => {
                                     </MDBCardBody>
                                 </MDBCol>
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    {/* <MDBView className="overlay rounded z-depth-1" waves>
-                                        <img
-                                            src="https://mdbootstrap.com/img/Photos/Others/project4.jpg"
-                                            alt=""
-                                            className="img-fluid"
-                                        />
-                                        <a href="#!">
-                                            <MDBMask overlay="green-slight" />
-                                        </a>
-                                    </MDBView> */}
                                     <MDBCardBody className="pb-0">
                                         <h2>
                                             <MDBIcon icon="headset" />
@@ -246,16 +226,6 @@ const ProdutosSection = () => {
                                     </MDBCardBody>
                                 </MDBCol>
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    {/* <MDBView className="overlay rounded z-depth-1" waves>
-                                        <img
-                                            src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg"
-                                            alt=""
-                                            className="img-fluid"
-                                        />
-                                        <a href="#!">
-                                            <MDBMask overlay="green-slight" />
-                                        </a>
-                                    </MDBView> */}
                                     <MDBCardBody className="pb-0">
                                         <h2>
                                             <MDBIcon icon="crown" />
@@ -291,7 +261,7 @@ const ProdutosSection = () => {
                             </h4>
                             <div className="row container">
                                 <div className="col-md-6 text-center d-none d-md-block">
-                                    <img src={require("../../assets/img/personal_trainer.jpg")} style={{ maxWidth: '80%' }} />
+                                    <img src={require("../../assets/img/personal_trainer-322x323.jpg")} style={{ maxWidth: '80%' }} />
                                 </div>
                                 <div className="col-md-6">
                                     <p>
@@ -411,80 +381,6 @@ const ProdutosSection = () => {
             </section>
         </>
     )
-    // return (
-    //     <section className="text-center my-5 align-items-center indigo-text" style={{height: '100vh'}}>
-    //         <h2 className="h1-responsive font-weight-bold my-5">
-    //             Produtos
-    //         </h2>
-    //         <h6 className="h6-responsive mb-5">
-    //             Conheça todos os meus produtos
-    //         </h6>
-    //         <Slider {...settings}>
-    //             <div className="container">
-    //                 <MDBView hover>
-    //                     <img
-    //                         src="https://mdbootstrap.com/img/Others/documentation/forest-sm-mini.jpg"
-    //                         className="img-fluid"
-    //                         alt=""
-    //                     />
-    //                     <MDBMask className="flex-center p-4" overlay="blue-strong">
-    //                         <h3 className="white-text">Personal Trainer</h3>
-    //                     </MDBMask>
-    //                 </MDBView>
-    //             </div>
-
-    //             <div className="container">
-    //                 <MDBView hover>
-    //                     <img
-    //                         src="https://mdbootstrap.com/img/Others/documentation/forest-sm-mini.jpg"
-    //                         className="img-fluid"
-    //                         alt=""
-    //                     />
-    //                     <MDBMask className="flex-center p-4" overlay="blue-strong">
-    //                         <h3 className="white-text">Consultoria semi-presencial</h3>
-    //                     </MDBMask>
-    //                 </MDBView>
-    //             </div>
-    //             <div className="container">
-    //                 <MDBView hover>
-    //                     <img
-    //                         src="https://mdbootstrap.com/img/Others/documentation/forest-sm-mini.jpg"
-    //                         className="img-fluid"
-    //                         alt=""
-    //                     />
-    //                     <MDBMask className="flex-center p-4" overlay="blue-strong">
-    //                         <h3 className="white-text">Consultoria online</h3>
-    //                     </MDBMask>
-    //                 </MDBView>
-    //             </div>
-    //             <div className="container">
-    //                 <MDBView hover>
-    //                     <img
-    //                         src="https://mdbootstrap.com/img/Others/documentation/forest-sm-mini.jpg"
-    //                         className="img-fluid"
-    //                         alt=""
-    //                     />
-    //                     <MDBMask className="flex-center p-4" overlay="blue-strong">
-    //                         <h3 className="white-text">Mentoria para Profissionais da área de saúde</h3>
-    //                     </MDBMask>
-    //                 </MDBView>
-    //             </div>
-    //             <div className="container">
-    //                 <MDBView hover>
-    //                     <img
-    //                         src="https://mdbootstrap.com/img/Others/documentation/forest-sm-mini.jpg"
-    //                         className="img-fluid"
-    //                         alt=""
-    //                     />
-    //                     <MDBMask className="flex-center p-4" overlay="blue-strong">
-    //                         <h3 className="white-text">Gestão de academias e similares</h3>
-    //                     </MDBMask>
-    //                 </MDBView>
-    //             </div>
-    //         </Slider>
-
-    //     </section>
-    // );
 }
 
 export default ProdutosSection;

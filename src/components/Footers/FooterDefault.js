@@ -1,7 +1,7 @@
 import React from "react";
 
 const FooterDefault = () => {
-    const logo = require('../../assets/img/green-logo-dark.png');
+    const logo = require('../../assets/img/green-logo-light-293x200.png');
     return (
         <footer className="page-footer font-small green-grey lighten-5">
             <div className="green">

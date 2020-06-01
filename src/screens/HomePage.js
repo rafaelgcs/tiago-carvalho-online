@@ -26,15 +26,15 @@ export default function HomePage() {
         }
     });
     return (
-        <>
-            <div id="top-page" className="col-12" style={{ border: 'none', width: window.innerWidth, maxWidth: window.innerWidth, backgroundImage: `url(${require('../assets/img/bg-dark-01.jpg')})`, backgroundRepeat: 'none', backgroundSize: 'cover', backgroundPosition: 'fixed', backgroundAttachment: 'fixed' }}>
+        <div style={{ background: 'linear-gradient(to right, #232526, #414345)' }}>
+            <div id="top-page" className="col-12" style={{ border: 'none', width: window.innerWidth, maxWidth: window.innerWidth, background: 'transparent' }}>
                 <div className="container">
                     <div className="row justify-content-md-center align-items-end" style={{ height: '100vh' }}>
                         <div className="col-md-6 text-center d-none d-md-block">
-                            <img src={require("../assets/img/tiago-c-2-green.png")} style={{ maxWidth: '70%' }} />
+                            <img src={require("../assets/img/tiago-c-2-green-378x480.png")} style={{ maxWidth: '70%' }} />
                         </div>
                         <div className="col-md-6 text-center align-items-center text-white">
-                            <img src={require("../assets/img/green-logo-light.png")} style={{ maxWidth: '100%' }} />
+                            <img src={require("../assets/img/green-logo-light-540x360.png")} style={{ maxWidth: '100%' }} />
                             <div className="d-block d-md-none" style={{ height: '5vh' }}></div>
                             <p>
                                 <b>
@@ -56,23 +56,23 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
-            <div style={{ border: 'none', backgroundImage: `url(${require('../assets/img/bg-dark-01.jpg')})`, backgroundRepeat: 'none', backgroundSize: 'cover', backgroundPosition: 'fixed', backgroundAttachment: 'fixed' }}>
+            <div style={{ border: 'none', background: 'transparent' }}>
                 <div className="container" id="about">
                     <AboutSection />
                 </div>
             </div>
-            <div style={{ paddingTop: 35, border: 'none', backgroundImage: `url(${require('../assets/img/bg-dark-01.jpg')})`, backgroundRepeat: 'none', backgroundSize: 'cover', backgroundPosition: 'fixed', backgroundAttachment: 'fixed' }}>
+            <div style={{ paddingTop: 35, border: 'none', background: 'transparent' }}>
                 <div className="container" id="consultorias">
                     <ProdutosSection />
                 </div>
             </div>
-            <div id="testimonials" style={{ paddingTop: 5, backgroundImage: `url(${require('../assets/img/bg-dark-01.jpg')})`, backgroundRepeat: 'none', backgroundSize: 'cover', backgroundPosition: 'fixed', backgroundAttachment: 'fixed' }} >
+            <div id="testimonials" style={{ paddingTop: 5, background: 'transparent' }} >
                 <div className="container">
                     <TestimonialsSection />
                 </div>
             </div>
             <FooterDefault />
             <FloatButtonWhatsapp />
-        </>
+        </div>
     );
 }
