@@ -1,9 +1,5 @@
 import React from "react";
 import { MDBRow, MDBCol, MDBCardBody, MDBIcon, MDBBtn, MDBView, MDBMask } from "mdbreact";
-import Slider from "react-slick";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const NextArrow = (props) => {
     const { className, style, onClick } = props;
@@ -37,42 +33,6 @@ const PrevArrow = (props) => {
     );
 }
 const ProdutosSection = () => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        initialSlide: 0,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
 
     const scrollingTo = to => {
         let element = document.getElementById(to);
@@ -118,28 +78,48 @@ const ProdutosSection = () => {
                             <p>
                                 Lembrando que, em uma academia, as condições e equipamentos para treinar são melhores. Mas se não gosta do ambiente, se você não tem mais saco de sair de casa para treinar, quem sabe os exercícios em casa sejam o que faltava! O planejamento dos treinamento tem validade de 30 dias.
                             </p>
-                            <p>
+                            <h3>
                                 <strong>Trabalho com três tipos de planos:</strong>
-                                <br />
-                                <MDBBtn onClick={() => scrollingTo('services')} color="white" size="lg">
-                                    <MDBIcon far icon="eye" className="left" /> CONHEÇA OS PLANOS
-                                </MDBBtn>
-                                <MDBBtn onClick={() => scrollingTo('app-mfit')} color="white" size="lg">
-                                    <MDBIcon far icon="eye" className="left" /> CONHEÇA O APP
-                                </MDBBtn>
-                                <ul className="container">
-                                    <li>
-                                        No plano de 1 consultoria, você receberá um planejamento com validade de 30 dias.
-                                    </li>
-                                    <li>
-                                        No plano de 3 consultorias, receberá 3 planejamentos, um por mês, e cada um com validade de 30 dias.
-                                    </li>
-                                    <li>
-                                        No plano de 12 consultorias, receberá 12 planejamentos, um por mês, e cada um com validade de 30 dias.
-                                    </li>
-                                </ul>
-                            </p>
+                            </h3>
                             <p>
+                                <div className="container">
+                                    <MDBRow className="text-center">
+                                        <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+                                            <MDBCardBody className="pb-0">
+                                                <h4 className="white-text font-weight-bold my-3">Mensal</h4>
+                                                <p className="white-text">
+                                                    No plano de 1 consultoria, você receberá um planejamento com validade de 30 dias.
+                                                </p>
+                                            </MDBCardBody>
+                                        </MDBCol>
+                                        <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+                                            <MDBCardBody className="pb-0">
+                                                <h4 className="white-text font-weight-bold my-3">Trimestral</h4>
+                                                <p className="white-text">
+                                                    No plano de 3 consultorias, receberá 3 planejamentos, um por mês, e cada um com validade de 30 dias.
+                                                </p>
+                                            </MDBCardBody>
+                                        </MDBCol>
+                                        <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+                                            <MDBCardBody className="pb-0">
+                                                <h4 className="white-text font-weight-bold my-3">Anual</h4>
+                                                <p className="white-text">
+                                                    No plano de 12 consultorias, receberá 12 planejamentos, um por mês, e cada um com validade de 30 dias.
+                                                </p>
+                                            </MDBCardBody>
+                                        </MDBCol>
+                                    </MDBRow>
+
+                                </div>
+                            </p>
+                            <MDBBtn onClick={() => scrollingTo('services')} color="white" size="lg">
+                                <MDBIcon far icon="eye" className="left" /> CONHEÇA OS BENEFÍCIOS DA MINHA CONSULTORIA
+                            </MDBBtn>
+                            <MDBBtn onClick={() => scrollingTo('app-mfit')} color="white" size="lg">
+                                <MDBIcon far icon="eye" className="left" /> CONHEÇA O APP
+                            </MDBBtn>
+
+                            <p className="mt-5">
                                 Todo o processo de compra e preenchimento do questionário e recebimento do planejamento é feito pelo aplicativo.
                             </p>
                             <p>
@@ -178,7 +158,7 @@ const ProdutosSection = () => {
                                 <img src={require("../../assets/img/mfit-logo-268x200.png")} />
                             </h4>
                             <p>
-                                Seu treino personalizado ficará disponível no aplicativo Ptrainer, com todos as explicações do programa em vídeos super detalhados.
+                                Seu treino personalizado ficará disponível no aplicativo MFITPERSONAL, com todos as explicações do programa em vídeos super detalhados.
                             </p>
                         </div>
                     </div>
@@ -190,7 +170,7 @@ const ProdutosSection = () => {
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-10 align-items-center mb-5">
                             <h2 className="h1-responsive font-weight-bold my-5 white-text">
-                                Minhas Consultorias
+                                Benefícios das Minhas Consultorias
                             </h2>
                             <MDBRow className="text-center">
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
@@ -202,11 +182,6 @@ const ProdutosSection = () => {
                                         <p className="white-text">
                                             Cada parte do seu treino é resultado de rigorosos estudos científicos. É assim que você garante a certeza de fazer o melhor treino possível no conforto de sua casa.
                                         </p>
-                                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5571992483233">
-                                            <MDBBtn color="white" size="sm">
-                                                <MDBIcon icon="brain" className="left" /> QUERO AGORA!
-                                            </MDBBtn>
-                                        </a>
                                     </MDBCardBody>
                                 </MDBCol>
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
@@ -218,11 +193,6 @@ const ProdutosSection = () => {
                                         <p className="white-text">
                                             Estarei lado a lado contigo durante todo processo. Você terá acesso direto ao meu Whatsapp pessoal para resolver qualquer dificuldade.
                                         </p>
-                                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5571992483233">
-                                            <MDBBtn color="white" size="sm">
-                                                <MDBIcon icon="headset" className="left" /> QUERO AGORA!
-                                            </MDBBtn>
-                                        </a>
                                     </MDBCardBody>
                                 </MDBCol>
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
@@ -234,9 +204,13 @@ const ProdutosSection = () => {
                                         <p className="white-text">
                                             E mais, você receberá materiais exclusivos que vão te levar aos resultados que você deseja muito mais rápido. Tudo isso dentro do nosso portal premium.
                                         </p>
+                                    </MDBCardBody>
+                                </MDBCol>
+                                <MDBCol lg="12" md="12" className="mb-lg-0 mb-4">
+                                    <MDBCardBody className="pb-0">
                                         <a target="_blank" href="https://api.whatsapp.com/send?phone=5571992483233">
-                                            <MDBBtn color="white" size="sm">
-                                                <MDBIcon icon="crown" className="left" /> QUERO AGORA!
+                                            <MDBBtn color="white" size="lg" style={{ width: '100%' }}>
+                                                COMPRE AGORA!
                                             </MDBBtn>
                                         </a>
                                     </MDBCardBody>
@@ -249,10 +223,10 @@ const ProdutosSection = () => {
                 </div>
             </section>
 
-            <section id="app-mfit" className="text-center my-5 align-items-center white-text" style={{ backgroundColor: 'transparent' }}>
+            <section id="app-mfit" className="text-center mb-5 align-items-center white-text" style={{ backgroundColor: 'transparent' }}>
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
-                        <div className="col-md-10 align-items-center">
+                        <div className="col-md-12 col-12 align-items-center">
                             <h2 className="h1-responsive font-weight-bold mt-5 green-text">
                                 Personal Trainer
                             </h2>
@@ -263,7 +237,7 @@ const ProdutosSection = () => {
                                 <div className="col-md-6 text-center d-none d-md-block">
                                     <img src={require("../../assets/img/personal_trainer-322x323.jpg")} style={{ maxWidth: '80%' }} />
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-md-6 col-12">
                                     <p>
                                         A função de um personal trainer é promover o bem-estar, a saúde e um condicionamento físico que seja eficaz para prevenir doenças, distúrbios funcionais e problemas de postura. Por isso, o treino com personal trainer garante atenção de alguém especializado, que estará focado na sua qualidade de vida. Isso é o que faz diferença nos seus resultados.
                                     </p>
@@ -274,7 +248,7 @@ const ProdutosSection = () => {
                                         Assim como o treino também deve ser. Cada pessoa possui objetivos diferentes também, e com isso, cada treinamento é feito de acordo com as limitações, objetivos e necessidades de cada pessoa.
                                     </p>
                                 </div>
-                                <div className="col-md-12">
+                                <div className="col-md-12 col-12">
                                     <h5>
                                         Objetivos!
                                     </h5>
@@ -325,7 +299,7 @@ const ProdutosSection = () => {
             <section id="funcional" className="text-center align-items-center white-text green rounded" style={{ backgroundColor: 'transparent', paddingBottom: 5 }}>
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
-                        <div className="col-md-10 align-items-center">
+                        <div className="col-md-10 col-12 align-items-center">
                             <h2 className="h1-responsive font-weight-bold mt-5">
                                 Treinamento Funcional
                             </h2>

@@ -36,7 +36,7 @@ const FooterDefault = () => {
 
             </div>
             <div className="container text-center text-md-left mt-5">
-                <div className="row mt-3 dark-grey-text">
+                <div className="row mt-3 white-text">
                     <div className="col-md-3 col-lg-4 col-xl-3 mb-4">
                         <img src={logo} height="200" />
                     </div>
@@ -44,13 +44,13 @@ const FooterDefault = () => {
                         <h6 className="text-uppercase font-weight-bold">Serviços</h6>
                         <hr className="teal green mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
                         <p>
-                            <a className="dark-grey-text" href="#!">Personal Trainer</a>
+                            <a className="white-text" href="#!">Personal Trainer</a>
                         </p>
                         <p>
-                            <a className="dark-grey-text" href="#!">Treinamento Funcional</a>
+                            <a className="white-text" href="#!">Treinamento Funcional</a>
                         </p>
                         <p>
-                            <a className="dark-grey-text" href="#!">Consultoria (Online/Presencial)</a>
+                            <a className="white-text" href="#!">Consultoria (Online/Presencial)</a>
                         </p>
 
                     </div>
@@ -58,13 +58,13 @@ const FooterDefault = () => {
                         <h6 className="text-uppercase font-weight-bold">Links Úteis</h6>
                         <hr className="teal green mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
                         <p>
-                            <a className="dark-grey-text" href="https://api.whatsapp.com/send?phone=5571992483233">Fale Comigo no Whatsapp</a>
+                            <a className="white-text" href="https://api.whatsapp.com/send?phone=5571992483233">Fale Comigo no Whatsapp</a>
                         </p>
                         <p>
-                            <a className="dark-grey-text" href="#!">FAQ</a>
+                            <a className="white-text" href="#!">FAQ</a>
                         </p>
                         <p>
-                            <a className="dark-grey-text" href="#!">Marque uma consulta</a>
+                            <a className="white-text" href="#!">Marque uma consulta</a>
                         </p>
                     </div>
                     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -88,8 +88,8 @@ const FooterDefault = () => {
                 </div>
             </div>
             <div className="footer-copyright text-center text-black-50 py-3"> © {new Date().getFullYear()} Copyright:
-                <a className="dark-grey-text" href="#"> Tiago Carvalho</a>, feito com{" "}
-                <i className="fa fa-heart heart dark-grey-text" /> por <a href="https://rafaelgcs.github.io" target="_blank" className="dark-grey-text">Rafael Guimarães</a>
+                <a className="white-text" href="#"> Tiago Carvalho</a>, feito com{" "}
+                <i className="fa fa-heart heart white-text" /> por <a href="https://rafaelgcs.github.io" target="_blank" className="white-text">Rafael Guimarães</a>
             </div>
 
 
