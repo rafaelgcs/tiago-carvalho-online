@@ -61,10 +61,7 @@ const FooterDefault = () => {
                             <a className="white-text" href="https://api.whatsapp.com/send?phone=5571992483233">Fale Comigo no Whatsapp</a>
                         </p>
                         <p>
-                            <a className="white-text" href="#!">FAQ</a>
-                        </p>
-                        <p>
-                            <a className="white-text" href="#!">Marque uma consulta</a>
+                            <a className="white-text" href="https://api.whatsapp.com/send?phone=5571992483233">Marque uma avaliação</a>
                         </p>
                     </div>
                     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

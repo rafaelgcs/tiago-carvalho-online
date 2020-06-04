@@ -52,10 +52,10 @@ const ProdutosSection = () => {
                                 (Online / Presencial)
                             </h4> */}
                             <p>
-                                Antes de você escolher um dos planos de treino eu preciso te explicar algumas coisas:
+                                Antes de você escolher um dos planos de treino eu preciso te explicar algumas coisas.
                                 <br />
-                                Primeiramente quero te dar parabéns por ter chegado até aqui. Isso mostra que você está a fim de melhorar a sua saúde e eu, na qualidade de profissional de Educação Física, fico feliz em saber que você acredita que eu possa te ajudar nessa jornada.
-                                Quando você compra meu treino, você não compra uma consultoria, você compra <strong>ECONOMIA DE TEMPO!</strong>
+                                Primeiramente, quero te dar parabéns por ter chegado até aqui, isso mostra que você está a fim de melhorar a sua saúde e eu, na qualidade de profissional de Educação Física, fico feliz em saber que você acredita que eu possa te ajudar nessa jornada.
+                                Quando você se afilia ao meu treino, você não está adquirindo uma consultoria, você investe em <strong>ECONOMIA DE TEMPO!</strong>
                             </p>
                             <h4 className="h4-responsive">
                                 <strong>
@@ -64,10 +64,10 @@ const ProdutosSection = () => {
                                 </strong>
                             </h4>
                             <p>
-                                o meu trabalho você não vai encontrar um "personal online". O que eu ofereço é um planejamento de treinamento baseado na ciência, com o intuito de te manter saudável, com um corpo bacana e com um programa eficaz, capaz de você economizar o seu tempo, coisa que poucos tem sobrando.
+                                Com meu trabalho você não vai encontrar um "personal online". O que eu ofereço é um planejamento de treinamento baseado na ciência, com o intuito de te manter saudável, com um corpo bacana e com um programa eficaz, capaz de você economizar o seu tempo, coisa que poucos tem sobrando.
                             </p>
                             <p>
-                                Então baseado em um questionário que você deverá preencher no momento da compra do plano, informando dados corporais, disponibilidade, rotina, dieta e limitações, eu vou montar o melhor planejamento de treinamento possível para que você possa alcançar o seu objetivo. Isso significa que eu possa sugerir mudanças na sua rotina para poder maximizar o seu resultado.
+                                Então, baseado em um questionário que você deverá preencher no momento da compra do plano, informando dados corporais, disponibilidade, rotina, dieta e limitações, eu vou montar o melhor planejamento de treinamento possível para que você possa alcançar o seu objetivo. Isso significa que eu possa sugerir mudanças na sua rotina para poder maximizar o seu resultado.
                             </p>
                             <p>
                                 Não está incluso plano de alimentação nos pacotes. Para isso você deve procurar um nutricionista da sua confiança.
@@ -76,7 +76,10 @@ const ProdutosSection = () => {
                                 Você pode escolher se deseja um treino para fazer na <strong>ACADEMIA OU EM CASA</strong>.
                             </p>
                             <p>
-                                Lembrando que, em uma academia, as condições e equipamentos para treinar são melhores. Mas se não gosta do ambiente, se você não tem mais saco de sair de casa para treinar, quem sabe os exercícios em casa sejam o que faltava! O planejamento dos treinamento tem validade de 30 dias.
+                                Lembrando que, em uma academia, as condições e equipamentos para treinar são melhores. Mas se não gosta do ambiente, se você não tem mais saco de sair de casa para treinar, quem sabe os exercícios em casa sejam o que faltava!
+                            </p>
+                            <p>
+                                O planejamento dos treinamentos tem validade de 30 dias.
                             </p>
                             <h3>
                                 <strong>Trabalho com três tipos de planos:</strong>
@@ -120,13 +123,13 @@ const ProdutosSection = () => {
                             </MDBBtn>
 
                             <p className="mt-5">
-                                Todo o processo de compra e preenchimento do questionário e recebimento do planejamento é feito pelo aplicativo.
+                                Todo o processo de compra, preenchimento do questionário e recebimento do planejamento é feito pelo aplicativo.
                             </p>
                             <p>
-                                As formas de pagamento são transferencia ou via link (que mando pelo WhatsApp). Nos segundo caso, é possível pagar de forma parcelada mas tem alguma taxa de juros do próprio sistema.
+                                As formas de pagamento são transferência ou via link (que mando pelo WhatsApp). No segundo caso, é possível pagar de forma parcelada, mas tem alguma taxa de juros do próprio sistema.
                             </p>
                             <p>
-                                Após a sua compra, toda a nossa comunicação se dará por meio da sua área de usuário; onde fico total disponível para ajudar nas dúvidas, questionamentos, entre outras situações.
+                                Após a sua compra, toda a nossa comunicação se dará por meio da sua área de usuário; onde fico 100% disponível para ajudar nas dúvidas, questionamentos, entre outras situações.
                             </p>
                             <p>
                                 Pra finalizar, te digo sem nenhum receio... se você fizer como combinado, permitindo que a ciência supere o senso comum, eu garanto os nossos resultados!
@@ -158,7 +161,7 @@ const ProdutosSection = () => {
                                 <img src={require("../../assets/img/mfit-logo-268x200.png")} />
                             </h4>
                             <p>
-                                Seu treino personalizado ficará disponível no aplicativo MFITPERSONAL, com todos as explicações do programa em vídeos super detalhados.
+                                Seu treino personalizado ficará disponível no aplicativo MFITPERSONAL, com todas as explicações do programa em vídeos super detalhados.
                             </p>
                         </div>
                     </div>
@@ -245,7 +248,7 @@ const ProdutosSection = () => {
                                         Cada indivíduo é único!
                                     </h5>
                                     <p>
-                                        Assim como o treino também deve ser. Cada pessoa possui objetivos diferentes também, e com isso, cada treinamento é feito de acordo com as limitações, objetivos e necessidades de cada pessoa.
+                                        Assim como o treino também deve ser. Cada pessoa possui objetivos diferentes, e com isso, cada treinamento é feito de acordo com as limitações, objetivos e necessidades de cada pessoa.
                                     </p>
                                 </div>
                                 <div className="col-md-12 col-12">
@@ -253,7 +256,7 @@ const ProdutosSection = () => {
                                         Objetivos!
                                     </h5>
                                     <p>
-                                        Depois de saber quais as suas necessidades e o a sua condição física, o personal trainer consegue montar um treino individualizado, para que você se desenvolva de acordo com os seus objetivos, sejam hipertrofia, ou perda de peso, etc. Esse treino específico é o que te dará o máximo de resultados, e o profissional irá respeitar os seus limites.
+                                        Depois de saber quais as suas necessidades e a sua condição física, o personal trainer consegue montar um treino individualizado, para que você se desenvolva de acordo com os seus objetivos, seja hipertrofia, ou perda de peso, etc. Esse treino específico é o que te dará o máximo de resultados, e o profissional irá respeitar os seus limites.
                                     </p>
                                     <h5>
                                         Disciplina!
@@ -313,7 +316,7 @@ const ProdutosSection = () => {
                                 Ele melhora o condicionamento físico como um todo. Em um segundo momento, desenvolve e aprimora habilidades específicas do indivíduo, sejam elas voltadas para um esporte ou para a vida diária, promovendo uma melhor qualidade de vida.
                             </p>
                             <p>
-                                Como complementos, nos treinos funcionais você pode usar itens como elásticos, cordas, bolas e hastes. A ideia não é focar no aumento da massa muscular, mas sim aprimorar o condicionamento físico e aumentar a força e a resistência do corpo.
+                                Como complemento, nos treinos funcionais você pode usar itens como elásticos, cordas, bolas e hastes. A ideia não é focar no aumento da massa muscular, mas sim aprimorar o condicionamento físico e aumentar a força e a resistência do corpo.
                             </p>
                             <p>
                                 <strong>

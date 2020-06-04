@@ -37,7 +37,7 @@ const AboutSection = () => {
                                 Atuo na área desde 2006, sou apaixonado por esportes, vida, saúde e movimento. Sou questionador por essência, um eterno buscador de mim mesmo.
                             </b>
                         </p>
-                        <MDBBtn className="w-100" rounded color="green" onClick={() => scrollingTo('consultorias')}>Conheça Minhas Consultorias!</MDBBtn>
+                        <MDBBtn className="w-100" rounded color="green" onClick={() => scrollingTo('consultorias')}>Conheça Meus Serviços!</MDBBtn>
 
                     </div>
 
