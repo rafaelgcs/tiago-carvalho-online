@@ -26,7 +26,7 @@ export default function DefaultNav(props) {
         element.scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
     return (
-        <MDBNavbar color='green' dark expand='md' fixed='top' scrolling>
+        <MDBNavbar color='blue' dark expand='md' fixed='top' scrolling>
             <MDBNavbarBrand href='/' className='py-0 font-weight-bold'>
                 <img src={logo} height="30" />
             </MDBNavbarBrand>

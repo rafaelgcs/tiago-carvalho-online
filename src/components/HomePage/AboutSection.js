@@ -13,17 +13,17 @@ const AboutSection = () => {
 
     return (
         <>
-            <section className="text-center align-items-center green-text transparent" style={{ height: '90vh', backgroundColor: 'transparent' }}>
+            <section className="text-center align-items-center blue-text transparent" style={{ height: '90vh', backgroundColor: 'transparent' }}>
                 <div className="row justify-content-md-center align-items-center" style={{ height: '100vh', backgroundColor: 'transparent' }}>
                     <div className="col-md-6 text-center d-none d-md-block">
-                        <img src={require("../../assets/img/tiago-c-3-green-270x480.png")} style={{ maxWidth: '50%' }} />
+                        <img src={require("../../assets/img/tiago-blue-270x480.png")} style={{ maxWidth: '50%' }} />
                     </div>
                     <div className="col-md-6 text-center align-items-center">
                         <div className="d-block d-md-none" style={{ height: '5vh' }}></div>
                         <div className="row justify-content-center">
                             <div className="col-md-2 col-8 d-block d-md-none">
                                 <img
-                                    src={require('../../assets/img/tiago-c-3-green-quad-220x220.png')}
+                                    src={require('../../assets/img/tiago-blue-quad-220x220.png')}
                                     className='rounded-circle text-center'
                                     alt=''
                                     width='100%'
@@ -37,7 +37,7 @@ const AboutSection = () => {
                                 Atuo na área desde 2006, sou apaixonado por esportes, vida, saúde e movimento. Sou questionador por essência, um eterno buscador de mim mesmo.
                             </b>
                         </p>
-                        <MDBBtn className="w-100" rounded color="green" onClick={() => scrollingTo('consultorias')}>Conheça Meus Serviços!</MDBBtn>
+                        <MDBBtn className="w-100" rounded color="blue" onClick={() => scrollingTo('consultorias')}>Conheça Meus Serviços!</MDBBtn>
 
                     </div>
 
