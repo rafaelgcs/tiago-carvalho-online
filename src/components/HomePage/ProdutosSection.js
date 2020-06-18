@@ -85,7 +85,7 @@ const ProdutosSection = () => {
                                 <div className="row justify-content-center align-items-center">
                                     <div className="col-md-12 align-items-center mb-5">
                                         <h3 className="h1-responsive font-weight-bold my-5 white-text">
-                                            Benefícios das Minhas Consultorias
+                                            Benefícios da Minha Consultoria
                                             </h3>
                                         <MDBRow className="text-center">
                                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
@@ -95,7 +95,7 @@ const ProdutosSection = () => {
                                                     </h2>
                                                     <h4 className="white-text font-weight-bold my-3">Treino Inteligente</h4>
                                                     <p className="white-text">
-                                                        Cada parte do seu treino é resultado de rigorosos estudos científicos. É assim que você garante a certeza de fazer o melhor treino possível no conforto de sua casa.
+                                                        Cada parte do seu treino é resultado de rigorosos estudos científicos. É assim que você garante a certeza de fazer o melhor treino possível no conforto de sua casa ou em uma academia.
                                                         </p>
                                                 </MDBCardBody>
                                             </MDBCol>
@@ -147,12 +147,14 @@ const ProdutosSection = () => {
                                     O melhor do treinamento em suas mãos!
                                 </strong>
                             </p>
-                            <MDBBtn onClick={() => scrollingTo('services')} color="white" size="lg">
-                                <MDBIcon far icon="eye" className="left" /> CONHEÇA OS PLANOS
-                            </MDBBtn>
-                            <MDBBtn onClick={() => scrollingTo('app-mfit')} color="white" size="lg">
-                                <MDBIcon far icon="eye" className="left" /> CONHEÇA O APP
-                            </MDBBtn>
+                            <div className="mb-4 w-100">
+                                <MDBBtn onClick={() => scrollingTo('services')} color="white" size="lg">
+                                    <MDBIcon far icon="eye" className="left" /> CONHEÇA OS PLANOS
+                                </MDBBtn>
+                                <MDBBtn onClick={() => scrollingTo('app-mfit')} color="white" size="lg">
+                                    <MDBIcon far icon="eye" className="left" /> CONHEÇA O APP
+                                </MDBBtn>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -230,17 +232,20 @@ const ProdutosSection = () => {
 
             <section id="personal" className="text-center my-5 align-items-center white-text">
                 <div className="container">
-                    <h2 className="h1-responsive font-weight-bold mt-5 blue-text">
+                    <h2 className="h1-responsive font-weight-bold mt-5 mb-5 blue-text">
                         Personal Trainer
                     </h2>
-                    <h4 className="h4-responsive mb-5">
+                    {/* <h4 className="h4-responsive mb-5">
                         Atendimento Individual
-                    </h4>
+                    </h4> */}
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-6 text-center d-none d-md-block">
                             <img src={require("../../assets/img/personal_trainer-322x323.jpg")} style={{ maxWidth: '80%' }} />
                         </div>
                         <div className="col-md-6 col-12 align-items-center text-center">
+                            <h5 className="font-weight-bold">
+                                Atendimento Individual
+                            </h5>
                             <p>
                                 A função de um personal trainer é promover o bem-estar, a saúde e um condicionamento físico que seja eficaz para prevenir doenças, distúrbios funcionais e problemas de postura. Por isso, o treino com personal trainer garante atenção de alguém especializado, que estará focado na sua qualidade de vida. Isso é o que faz diferença nos seus resultados.
                             </p>
