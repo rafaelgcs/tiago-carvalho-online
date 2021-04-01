@@ -10,6 +10,7 @@ import StarIcon from '@material-ui/icons/StarBorder';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { tiers } from '../constants/constants';
 
 const useStyles = makeStyles((theme) => ({
     '@global': {
@@ -55,41 +56,6 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 }));
-
-const tiers = [
-    {
-        popular: false,
-        title: 'TC Mensal',
-        price: '197,00',
-        url: 'https://www.mfitpersonal.com.br/index?share=MjE1MjIvMC84LzU0ODY=',
-        description: ['10 users included', '2 GB of storage', 'Help center access', 'Email support'],
-    },
-    {
-        popular: true,
-        title: 'TC Trimestral',
-        // subheader: 'Most popular',
-        price: '377,00',
-        url: 'https://www.mfitpersonal.com.br/index?share=MjE1MjIvMC84LzU0ODc=',
-        description: [
-            '20 users included',
-            '10 GB of storage',
-            'Help center access',
-            'Priority email support',
-        ],
-    },
-    {
-        popular: false,
-        title: 'TC Semestral',
-        price: '697,00',
-        url: 'https://www.mfitpersonal.com.br/index?share=MjE1MjIvMC84LzU0ODg=',
-        description: [
-            '50 users included',
-            '30 GB of storage',
-            'Help center access',
-            'Phone & email support',
-        ],
-    },
-];
 
 export default function Plans() {
     const classes = useStyles();

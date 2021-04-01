@@ -1,4 +1,5 @@
 import React from "react";
+import { tiers } from '../constants/constants';
 
 const Footer = () => {
     const logo = require('assets/img/blue-logo-dark-293x200.png');
@@ -41,17 +42,13 @@ const Footer = () => {
                         <img src={logo} height="200" alt="Logomarca Tiago Carvalho" />
                     </div>
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <h6 className="text-uppercase font-weight-bold">Serviços</h6>
+                        <h6 className="text-uppercase font-weight-bold">Planos</h6>
                         <hr className="teal blue mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
-                        <p>
-                            <a className="black-text" href="#!">Personal Trainer</a>
-                        </p>
-                        <p>
-                            <a className="black-text" href="#!">Treinamento Funcional</a>
-                        </p>
-                        <p>
-                            <a className="black-text" href="#!">Consultoria (Online/Presencial)</a>
-                        </p>
+                        {tiers.map((tier) => {
+                            return <p>
+                                <a className="black-text" href={tier.url} target="_blank" rel="noopener noreferrer">{tier.title}</a>
+                            </p>
+                        })}
 
                     </div>
                     <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
