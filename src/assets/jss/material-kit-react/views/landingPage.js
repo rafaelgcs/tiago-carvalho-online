@@ -8,10 +8,10 @@ const landingPageStyle = {
   },
   title: {
     ...title,
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
     display: "inline-block",
     position: "relative",
-    marginTop: "30px",
-    minHeight: "32px",
+    textTransform: "uppercase",
     color: "#FFFFFF",
     textDecoration: "none"
   },

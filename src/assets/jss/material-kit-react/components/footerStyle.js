@@ -29,13 +29,9 @@ const footerStyle = {
     position: "relative"
   },
   a: {
-
     color: primaryColor,
     textDecoration: "none",
-    backgroundColor: "transparent",
-    "&,&:hover,&:focus": {
-      color: "#700070"
-    }
+    backgroundColor: "transparent"
   },
   footerWhiteFont: {
     "&,&:hover,&:focus": {
