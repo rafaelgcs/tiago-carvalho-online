@@ -55,6 +55,9 @@ const Footer = () => {
                         <h6 className="text-uppercase font-weight-bold">Links Úteis</h6>
                         <hr className="teal blue mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
                         <p>
+                            <a className="black-text" href="https://www.mfitpersonal.com.br/index?share=MjE1MjIvMC85LzA=">Cadastre-se</a>
+                        </p>
+                        <p>
                             <a className="black-text" href="https://api.whatsapp.com/send?phone=5571992483233">Fale Comigo no Whatsapp</a>
                         </p>
                         <p>

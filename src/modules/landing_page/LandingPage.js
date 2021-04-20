@@ -24,6 +24,8 @@ import Testimonials from "./sections/Testimonials";
 import MFITSection from "./sections/MFITSection";
 import Plans from "./sections/PlansSection";
 import FloatWhatsappButton from "./components/FloatButton/FloatWhatsappButton";
+import Subscription from "./sections/Subscription";
+import HeaderLinks from "./components/Header/HeaderLinks";
 
 const useStyles = makeStyles(styles);
 
@@ -36,7 +38,7 @@ export default function LandingPage(props) {
         color="transparent"
         // routes={dashboardRoutes}
         // brand="Material Kit React"
-        // rightLinks={<HeaderLinks />}
+        rightLinks={<HeaderLinks />}
         fixed
         {...rest}
       />
@@ -79,6 +81,7 @@ export default function LandingPage(props) {
       <MFITSection />
       <AboutMe />
       <Plans />
+      <Subscription />
       <Footer />
       <FloatWhatsappButton />
     </div>

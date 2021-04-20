@@ -16,13 +16,15 @@ import 'assets/css/style.css';
 // import ProfilePage from "views/ProfilePage/ProfilePage";
 // import LoginPage from "views/LoginPage/LoginPage";
 import HomePage from "modules/landing_page/LandingPage";
+import Redirection from "modules/redirection/Redirection";
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-        <Route path="/" component={HomePage} />
+      <Route path="/r/:code" component={Redirection} />
+      <Route path="/" component={HomePage} />
     </Switch>
   </Router>,
   document.getElementById("root")

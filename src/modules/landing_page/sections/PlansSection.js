@@ -76,7 +76,7 @@ export default function Plans() {
                         <Grid item key={tier.title} xs={12} sm={tier.title === 'Enterprise' ? 12 : 6} md={4}>
                             <Card style={{ borderRadius: 20 }}>
                                 <CardHeader
-                                    style={{backgroundColor: tier.popular ? "#0d0e14" : "#fff", color: !tier.popular ? "#0d0e14" : "#fff",}}
+                                    style={{ backgroundColor: tier.popular ? "#0d0e14" : "#fff", color: !tier.popular ? "#0d0e14" : "#fff", }}
                                     title={tier.title}
                                     subheader={tier.subheader}
                                     titleTypographyProps={{ align: 'center' }}
@@ -84,10 +84,18 @@ export default function Plans() {
                                     action={tier.title === 'Pro' ? <StarIcon /> : null}
                                     className={classes.cardHeader}
                                 />
-                                <CardContent style={{backgroundColor: tier.popular ? "#0d0e14" : "#fff", color: !tier.popular ? "#0d0e14" : "#fff",}}>
-                                    <div className={classes.cardPricing} style={{ color: !tier.popular ? "#0d0e14" : "#fff",}}>
+                                <CardContent style={{ backgroundColor: tier.popular ? "#0d0e14" : "#fff", color: !tier.popular ? "#0d0e14" : "#fff", }}>
+                                    <div className={classes.cardPricing} style={{ color: !tier.popular ? "#dc3545" : "#17a2b8", }}>
+                                        {
+                                            tier.promotion &&
+                                            <Typography component="s" variant="s">
+                                                de R${tier.price}
+                                            </Typography>
+                                        }
+                                    </div>
+                                    <div className={classes.cardPricing} style={{ color: !tier.popular ? "#0d0e14" : "#fff", }}>
                                         <Typography component="h2" variant="h3">
-                                            R${tier.price}
+                                            R${tier.promotion ? tier.promotion_price : tier.price}
                                         </Typography>
                                         {/* <Typography variant="h6" color="textSecondary">
                                             /mo
@@ -101,9 +109,9 @@ export default function Plans() {
                                         ))}
                                     </ul>
                                 </CardContent>
-                                <CardActions style={{backgroundColor: tier.popular ? "#0d0e14" : "#fff", color: !tier.popular ? "#0d0e14" : "#fff",}}>
+                                <CardActions style={{ backgroundColor: tier.popular ? "#0d0e14" : "#fff", color: !tier.popular ? "#0d0e14" : "#fff", }}>
                                     <ButtonMKR
-                                        style={{width: '100%', borderRadius: 30}}
+                                        style={{ width: '100%', borderRadius: 30 }}
                                         color={tier.popular ? 'info' : 'default'}
                                         size="lg"
                                         href={tier.url}

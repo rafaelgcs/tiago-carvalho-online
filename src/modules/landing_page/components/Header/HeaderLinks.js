@@ -12,109 +12,88 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
+import { Apps, CloudDownload, TurnedIn } from "@material-ui/icons";
+// import TurnedInIcon from '@material-ui/icons/TurnedIn';
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
+import { links } from "modules/landing_page/constants/constants";
 
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
   const classes = useStyles();
-  return (
-    <List className={classes.list}>
-      <ListItem className={classes.listItem}>
+
+  const renderDropdownLink = (item) => {
+    if (item.local) {
+      return <Link to={item.link} className={classes.dropdownLink}>
+        {item.title}
+      </Link>
+    } else {
+      return <a
+        href={item.link}
+        target={item.target}
+        className={classes.dropdownLink}
+      >
+        {item.title}
+      </a>
+    }
+  }
+
+  const renderListItem = (item) => {
+    if (item.isDropdown) {
+      return <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText={item.text}
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All components
-            </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
-          ]}
+          buttonIcon={item.icon ? <i className={classes.socialIcons + ` ${item.icon}`} /> : TurnedIn}
+          dropdownList={item.dropdownList.map(dlItem => {
+            return renderDropdownLink(dlItem);
+          })}
         />
       </ListItem>
-      <ListItem className={classes.listItem}>
+    }
+    else if (item.tooltip) {
+      return <ListItem className={classes.listItem}>
+        <Tooltip
+          id={`tooltip__${item.text}`}
+          title={item.tooltipText}
+          placement={item.tooltipDirection}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href={item.link}
+            target={item.target}
+            color="transparent"
+            className={classes.navLink}
+          >
+            {item.icon && <i className={classes.socialIcons + ` ${item.icon}`} />} {item.text}
+          </Button>
+        </Tooltip>
+      </ListItem>
+    } else {
+      return <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          href={item.link}
           color="transparent"
-          target="_blank"
+          target={item.target}
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          {item.icon && <i className={classes.socialIcons + ` ${item.icon}`} />} {item.text}
         </Button>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
-          <IconButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
-        <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Follow us on facebook"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-tooltip"
-          title="Follow us on instagram"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
+    }
+  }
+  return (
+    <List className={classes.list + "d-block d-md-none"}>
+      {links.map(link => renderListItem(link))}
     </List>
   );
 }
