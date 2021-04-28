@@ -1,4 +1,4 @@
-# Ricardo Falcao Site
+# Tiago Carvalho - Site
 Using MDBootstrap for React
 
 ## Getting Started
