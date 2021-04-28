@@ -1,6 +1,6 @@
-import { defaultFont } from "../../material-kit-react.js";
+import { defaultFont } from "assets/jss/material-kit-react.js";
 
-import tooltip from "../tooltipsStyle.js";
+import tooltip from "assets/jss/material-kit-react/tooltipsStyle.js";
 
 const headerLinksStyle = theme => ({
   list: {
@@ -103,13 +103,6 @@ const headerLinksStyle = theme => ({
   dropdownLink: {
     "&,&:hover,&:focus": {
       color: "inherit",
-      textDecoration: "none",
-      display: "block",
-      padding: "10px 20px"
-    },
-    "&:hover": {
-      backgroundColor: '#244798',
-      color: "white",
       textDecoration: "none",
       display: "block",
       padding: "10px 20px"
