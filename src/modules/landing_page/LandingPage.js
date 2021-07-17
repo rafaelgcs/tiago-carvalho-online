@@ -36,13 +36,11 @@ export default function LandingPage(props) {
     <div style={{backgroundColor: '#0d0e14', scrollBehavior: 'smooth'}}>
       <Header
         color="transparent"
-        // routes={dashboardRoutes}
-        // brand="Material Kit React"
         rightLinks={<HeaderLinks />}
         fixed
         {...rest}
       />
-      <Parallax filter image={require("assets/img/bg5.jpg")}>
+      <Parallax filter image={require("assets/img/female-bg_010.png")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>

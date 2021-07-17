@@ -22,7 +22,7 @@ export default function AboutMe() {
                 <div className={classes.container}>
                     <GridContainer justify="left">
                         <GridItem xs={12} sm={12} md={6} className="d-none d-md-block">
-                            <img src={require('assets/img/tiago-blue-270x480.png')} alt="Logomarca" />
+                            <img className="shadow" style={{borderRadius: 25}} src={require('assets/img/about_me.png')} alt="Logomarca" />
                         </GridItem>
                         <GridItem xs={12} sm={12} md={3}>
                             <div style={{ position: 'center', alignContent: 'center' }}>
